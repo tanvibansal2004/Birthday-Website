@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Discuit <3</title>
+
+  <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=DM+Serif+Display&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+<div id="stars"></div>
+<div id="hc"></div>
+
+<div class="scene">
+  <div class="card">
+
+    <!-- PAGE 1 -->
+    <div class="page active" id="p1">
+      <h1 class="ptitle">Happy Birthday Discuit</h1>
+      <img src="assets/cat_dance.gif" class="mascot" />
+      <p class="psub">For the one who I will always love the most!</p>
+      <button class="px-btn" onclick="goTo('p2')">Peek Inside ></button>
+    </div>
+
+    <!-- PAGE 2 -->
+    <div class="page" id="p2">
+      <h2 class="ptitle">Our Cutu Moments</h2>
+      <p class="psub">Every moment spent with you is a blast!</p>
+
+      <div class="win-wrap">
+        <img src="assets/window.png" class="win-frame"/>
+        <div id="mem-grid"></div>
+      </div>
+      <!-- <div class="photo-grid" id="mem-grid"></div> -->
+
+      <button class="px-btn" onclick="goTo('p3')">Got you Something?</button>
+    </div>
+
+    <!-- PAGE 3 -->
+    <div class="page" id="p3">
+      <h2 class="ptitle">A Message for You</h2>
+      <p class="psub">Tap the envelope to open the letter!</p>
+
+      <div class="env-wrap" id="env-wrap">
+        <img src="assets/envelope.png" alt="Envelope" />
+      </div>
+    </div>
+
+    <!-- PAGE 4 -->
+    <div class="page" id="p4">
+      <h2 class="ptitle">From My Heart</h2>
+
+      <div class="letter-wrap">
+        <p class="lt"><strong>My dear Discuit,</strong></p>
+        <p class="lt">
+          I can't ever tell you enough about how much I frickin' Love You and how much I'm thankful for you! 💖
+          I'm so lucky to have you in my life. I miss you so so sooooo much but I can't explain just how much. 😭
+          Just like today's lunch, I wish to earn so much money that I can spoil you everyday. 🤓 I will do anything and everything for you. 
+          I love you! 💖<br>
+          MUAH MUAH MUAH 💋 <br>
+        </p>
+        <p class="lt lt-sign">Your Jiji</p>
+      </div>
+
+      <br />
+      <button class="px-btn" onclick="goTo('p5')">Let's Celebrate!!?</button>
+    </div>
+
+    <!-- PAGE 5 -->
+    <div class="page" id="p5">
+      <h2 class="ptitle">How old are you?</h2>
+      <img src="assets/cat_heart.gif" class="cat-final"/>
+
+      <p class="psub" id="valentine-question">I heard someone say 19!!??</p>
+
+      <div class="btn-row" id="proposal-btns">
+        <img src="assets/yes.png" class="choice" onclick="yesAnswer()" />
+        <img src="assets/no.png" class="choice" id="noBtn" />
+      </div>
+
+      <p id="result" class="result"></p>
+
+      <br />
+      <button class="px-btn" id="play-again-btn" onclick="goTo('p1')" style="display: none;">Celebrate Again?</button>
+    </div>
+
+  </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
